@@ -7,6 +7,14 @@ const Navbar = () => {
       icon: "/assets/icons/search.svg",
       alt: "search",
     },
+    {
+      icon: "/assets/icons/black-heart.svg",
+      alt: "heart",
+    },
+    {
+      icon: "/assets/icons/user.svg",
+      alt: "user",
+    },
   ];
 
   return (

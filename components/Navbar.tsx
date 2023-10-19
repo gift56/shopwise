@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <header className="w-full">
-      <nav></nav>
+      <nav className="nav"></nav>
     </header>
   );
 };

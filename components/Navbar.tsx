@@ -31,7 +31,18 @@ const Navbar = () => {
             Shop<span className="text-primary">Wise</span>
           </p>
         </Link>
-        <div className="flex items-center gap-5"></div>
+        <div className="flex items-center gap-5">
+          {navIcons.map((item) => (
+            <Image
+              key={item.alt}
+              src={item.icon}
+              alt={item.alt}
+              width={28}
+              height={28}
+              className="object-contain cursor-pointer"
+            />
+          ))}
+        </div>
       </nav>
     </header>
   );

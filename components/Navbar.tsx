@@ -33,14 +33,18 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-5">
           {navIcons.map((item) => (
-            <Image
+            <div
               key={item.alt}
-              src={item.icon}
-              alt={item.alt}
-              width={28}
-              height={28}
-              className="object-contain cursor-pointer"
-            />
+              className="w-10 h-10 flex items-center justify-center rounded-md hover:bg-gray-200 transition-all duration-300"
+            >
+              <Image
+                src={item.icon}
+                alt={item.alt}
+                width={28}
+                height={28}
+                className="object-contain cursor-pointer"
+              />
+            </div>
           ))}
         </div>
       </nav>

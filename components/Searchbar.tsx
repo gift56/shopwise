@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import toast from "react-hot-toast";
 
 const Searchbar = () => {
   const [searchPrompt, setSearchPrompt] = useState("");
@@ -29,7 +30,7 @@ const Searchbar = () => {
 
     const isValidLink = isValidAmazonProductUrl(searchPrompt);
     if (!isValidLink) {
-      return
+      return () => toast.error("Please provide a valid Amazon link");
     }
   };
 

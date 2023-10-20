@@ -5,9 +5,17 @@ import { useState, FormEvent } from "react";
 const Searchbar = () => {
   const [searchPrompt, setSearchPrompt] = useState("");
 
+  const isValidAmazonProductUrl = (url: string) => {
+    try {
+      const parsedUrl = new URL(url);
+      const hostname = parsedUrl.hostname;
+    } catch (error) {}
+  };
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    
+
+    const isValidLink = isValidAmazonProductUrl(searchPrompt);
   };
 
   return (

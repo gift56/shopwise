@@ -60,7 +60,7 @@ const ProductDetail = async ({ params: { id } }: Props) => {
                 </p>
               </div>
 
-              <div className="p-2 bg-white-200 rounded-10">
+              <div className="p-2 bg-white-200 rounded-10 cursor-pointer">
                 <Image
                   src="/assets/icons/bookmark.svg"
                   alt="bookmark"
@@ -69,7 +69,7 @@ const ProductDetail = async ({ params: { id } }: Props) => {
                 />
               </div>
 
-              <div className="p-2 bg-white-200 rounded-10">
+              <div className="p-2 bg-white-200 rounded-10 cursor-pointer">
                 <Image
                   src="/assets/icons/share.svg"
                   alt="share"

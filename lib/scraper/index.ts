@@ -43,7 +43,7 @@ export async function scrapeAmazonProduct(url: string) {
       $("#availability span").text().trim().toLowerCase() ===
       "currently unavailable";
 
-    console.log({ title, currentPrice, originalPrice });
+    console.log({ title, currentPrice, originalPrice, outOfStock });
   } catch (error: any) {
     throw new Error(`Failed to scrape product: ${error.message}`);
   }

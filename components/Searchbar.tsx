@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 
 const Searchbar = () => {
   const [searchPrompt, setSearchPrompt] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const isValidAmazonProductUrl = (url: string) => {
     try {
@@ -34,9 +35,10 @@ const Searchbar = () => {
     }
 
     try {
-      
+      setLoading(true);
     } catch (error) {
-      
+    } finally {
+      setLoading(false);
     }
   };
 

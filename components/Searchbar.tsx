@@ -1,5 +1,12 @@
+"use client"
+
 const Searchbar = () => {
-  return <div>Searchbar</div>;
+  const handleSubmit = () => {};
+  return (
+    <form className="flex flex-wrap gap-4 mt-12" onSubmit={handleSubmit}>
+      Searchbar
+    </form>
+  );
 };
 
 export default Searchbar;

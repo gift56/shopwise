@@ -15,4 +15,8 @@ export async function scrapeAmazonProduct(url: string) {
     port,
     rejectUnauthorized: false,
   };
+  try {
+  } catch (error: any) {
+    throw new Error(`Failed to scrape product: ${error.message}`);
+  }
 }

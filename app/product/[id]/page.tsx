@@ -1,4 +1,4 @@
-import { PriceInfoCard, ProductCard } from "@/components";
+import { Modal, PriceInfoCard, ProductCard } from "@/components";
 import { getProductById, getSimilarProducts } from "@/lib/actions";
 import { formatNumber } from "@/lib/utils";
 import { Product } from "@/types";

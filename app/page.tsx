@@ -28,6 +28,7 @@ const Home = () => {
           HeroCarousel
         </div>
       </section>
+      <section></section>
     </>
   );
 };

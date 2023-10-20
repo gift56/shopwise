@@ -9,6 +9,8 @@ const Searchbar = () => {
     try {
       const parsedUrl = new URL(url);
       const hostname = parsedUrl.hostname;
+
+      // Checking if hostname contains amazon.com or amazon.code
     } catch (error) {}
   };
 

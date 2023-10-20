@@ -6,6 +6,7 @@ const Searchbar = () => {
   const [searchPrompt, setSearchPrompt] = useState("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     
   };
 

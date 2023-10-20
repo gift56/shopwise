@@ -1,4 +1,4 @@
-import { Searchbar } from "@/components";
+import { HeroCarousel, Searchbar } from "@/components";
 import Image from "next/image";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
             </p>
             <Searchbar />
           </div>
-          HeroCarousel
+          <HeroCarousel />
         </div>
       </section>
       <section className="trending-section">

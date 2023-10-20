@@ -16,7 +16,7 @@ const Home = () => {
               />
             </p>
             <h1 className="head-text">
-              Unleash the Power of <span className="primary"> ShopWise</span>
+              Unleash the Power of <span className="text-primary"> ShopWise</span>
             </h1>
           </div>
         </div>

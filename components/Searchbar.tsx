@@ -51,7 +51,7 @@ const Searchbar = () => {
         placeholder="Search Product link"
         className="searchbar-input"
       />
-      <button disabled={} type="submit" className="searchbar-btn">
+      <button disabled={loading} type="submit" className="searchbar-btn">
         {loading ? "Searching..." : "Search"}
       </button>
     </form>

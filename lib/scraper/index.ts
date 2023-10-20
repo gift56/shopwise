@@ -30,12 +30,15 @@ export async function scrapeAmazonProduct(url: string) {
     const currentPrice = extractPrice(
       $(".priceToPay span.a-price-whole"),
       $("a.size.base.a-color-price"),
-      $(".a-button-selected .a-color-base"),
-      $(".a-price.a-text-price")
+      $(".a-button-selected .a-color-base")
     );
-    const originalPrice = extractPrice($("#priceblock_ourprice",$(
-        "a-price.a-text-price span.a--offscreen"
-    )));
+    const originalPrice = extractPrice(
+      $("#priceblock_ourprice"),
+      $(".a-price.a-text-price span.a-offscreen"),
+      $("#listPrice"),
+      $("#priceblock_dealprice"),
+      $(".a-size-base.a-color-price")
+    );
     console.log({ title, currentPrice });
   } catch (error: any) {
     throw new Error(`Failed to scrape product: ${error.message}`);

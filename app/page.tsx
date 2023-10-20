@@ -25,6 +25,7 @@ const Home = () => {
             </p>
             <div>Searchbar</div>
           </div>
+          HeroCarousel
         </div>
       </section>
     </>

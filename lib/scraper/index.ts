@@ -22,6 +22,8 @@ export async function scrapeAmazonProduct(url: string) {
   try {
     // Fetch product page
     const response = await axios.get(url, option);
+
+    console.log(response.data);
   } catch (error: any) {
     throw new Error(`Failed to scrape product: ${error.message}`);
   }

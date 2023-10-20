@@ -28,7 +28,9 @@ const Home = () => {
           HeroCarousel
         </div>
       </section>
-      <section></section>
+      <section className="trending-section">
+        <h2 className="section-text">Trending</h2>
+      </section>
     </>
   );
 };

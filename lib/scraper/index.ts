@@ -30,7 +30,8 @@ export async function scrapeAmazonProduct(url: string) {
     const currentPrice = extractPrice(
       $(".priceToPay span.a-price-whole"),
       $("a.size.base.a-color-price"),
-      $(".a-button-selected .a-color-base")
+      $(".a-button-selected .a-color-base"),
+      $(".a-price .a-offscreen")
     );
     console.log({ title, currentPrice });
   } catch (error: any) {

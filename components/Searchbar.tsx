@@ -30,7 +30,13 @@ const Searchbar = () => {
 
     const isValidLink = isValidAmazonProductUrl(searchPrompt);
     if (!isValidLink) {
-      return () => toast.error("Please provide a valid Amazon link");
+      return toast.error("Please provide a valid Amazon link");
+    }
+
+    try {
+      
+    } catch (error) {
+      
     }
   };
 

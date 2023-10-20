@@ -25,7 +25,8 @@ export async function scrapeAmazonProduct(url: string) {
     const $ = cheerio.load(response.data);
 
     // Extracting product details
-    
+    const title = $("#productTitle").text().trim();
+    const currentPrice = extractPrice();
   } catch (error: any) {
     throw new Error(`Failed to scrape product: ${error.message}`);
   }

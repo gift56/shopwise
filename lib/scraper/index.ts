@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
-import { extractCurrency, extractDescription, extractPrice } from "../utils";
+import { extractCurrency, extractPrice } from "../utils";
 
 export async function scrapeAmazonProduct(url: string) {
   if (!url) return;
@@ -56,7 +56,6 @@ export async function scrapeAmazonProduct(url: string) {
     const match = inputText.match(regex);
     const discountRate = match ? match[1] : null;
     const description = $("#productDescription").text().trim();
-    console.log({ description });
 
     // Construct data object with scraped information
     const data = {

@@ -1,5 +1,8 @@
+"use client";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import Image from "next/image";
 
 const HeroCarousel = () => {
   const heroImages = [
@@ -26,17 +29,25 @@ const HeroCarousel = () => {
   ];
 
   return (
-    <div>
-      <Carousel>
-        <div>
-          <p className="legend">Legend 1</p>
-        </div>
-        <div>
-          <p className="legend">Legend 2</p>
-        </div>
-        <div>
-          <p className="legend">Legend 3</p>
-        </div>
+    <div className="hero-carousel">
+      <Carousel
+        showThumbs={false}
+        autoPlay
+        infiniteLoop
+        interval={2000}
+        showArrows={false}
+        showStatus={false}
+      >
+        {heroImages.map((image) => (
+          <Image
+            src={image.imgSrc}
+            alt={image.alt}
+            width={484}
+            height={484}
+            className="object-contain"
+            key={image.alt}
+          />
+        ))}
       </Carousel>
     </div>
   );

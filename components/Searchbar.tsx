@@ -37,6 +37,7 @@ const Searchbar = () => {
     try {
       setLoading(true);
     } catch (error) {
+      console.log(error);
     } finally {
       setLoading(false);
     }

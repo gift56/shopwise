@@ -55,7 +55,7 @@ export async function scrapeAmazonProduct(url: string) {
     const regex = /\(([^)]+)\)/;
     const match = inputText.match(regex);
     const discountRate = match ? match[1] : null;
-    const description = extractDescription($);
+    const description = $("#productDescription").text().trim();
     console.log({ description });
 
     // Construct data object with scraped information

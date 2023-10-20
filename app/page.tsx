@@ -16,8 +16,13 @@ const Home = () => {
               />
             </p>
             <h1 className="head-text">
-              Unleash the Power of <span className="text-primary"> ShopWise</span>
+              Unleash the Power of{" "}
+              <span className="text-primary"> ShopWise</span>
             </h1>
+            <p className="mt-6">
+              Powerful, self-serve product and growth analytics to help you
+              convert, engage, and retain more.
+            </p>
           </div>
         </div>
       </section>

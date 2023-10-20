@@ -10,7 +10,10 @@ const Searchbar = () => {
       const parsedUrl = new URL(url);
       const hostname = parsedUrl.hostname;
 
-      // Checking if hostname contains amazon.com or amazon.code
+      // Checking if hostname contains amazon.com
+      if(hostname.includes("amazon.com") || hostname.includes("amazon.") || hostname.endsWith("amazon")){
+
+      }
     } catch (error) {}
   };
 

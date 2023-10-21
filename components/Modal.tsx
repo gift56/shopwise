@@ -103,7 +103,7 @@ const Modal = ({ productId }: Props) => {
                   >
                     Email address
                   </label>
-                  <div className="dialog-input_container">
+                  <div className="dialog-input_container hover:border-primary">
                     <Image
                       src="/assets/icons/mail.svg"
                       alt="mail"
